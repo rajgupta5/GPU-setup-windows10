@@ -11,3 +11,10 @@
 - Set the path in the environment variable for bin, lib, include folders
 - Download visual studio 2017 , everything related to c++
 - create an environment, then install tensorflow-gpu
+  - conda create -n gputest python==3.6
+  - conda activate gputest
+  - pip install tensorflow-gpu==2.0.0
+  - python
+  - import tensoflow as tf (this will be seen: Successfully opened dynamic library cudart64_100.dll)
+  - tf.test.is_gpu_available()
+  - tf.test.is_built_with_cuda()
